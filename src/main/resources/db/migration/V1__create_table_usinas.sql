@@ -1,0 +1,9 @@
+CREATE TABLE usinas (
+    id SERIAL PRIMARY KEY,
+    codigo VARCHAR(100) NOT NULL,
+    nome VARCHAR(255) NOT NULL,
+    uf VARCHAR(2) NOT NULL,
+    fonte VARCHAR(255) NOT NULL,
+    potencia DOUBLE PRECISION NOT NULL,
+    empresa VARCHAR(255) NOT NULL
+);
