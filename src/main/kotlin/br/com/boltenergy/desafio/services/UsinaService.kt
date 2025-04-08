@@ -2,6 +2,7 @@ package br.com.boltenergy.desafio.services
 
 import br.com.boltenergy.desafio.model.Usina
 import br.com.boltenergy.desafio.repository.UsinaRepository
+import org.springframework.data.domain.PageRequest
 import org.springframework.stereotype.Service
 
 @Service
@@ -34,6 +35,10 @@ class UsinaService(
             potencia = potencia,
             empresa = empresa
         )
+    }
+
+    fun buscarTop5MaisPotentes(): List<Usina> {
+        return repository.findTop5ByPotenciaDesc(PageRequest.of(0, 5))
     }
 
     fun estaVazio(): Boolean = repository.count() == 0L
