@@ -33,6 +33,13 @@ Este projeto foi desenvolvido como parte do processo seletivo da Bolt Energy. El
 - Docker (para rodar o PostgreSQL localmente)
 
 ---
+## Front-end (Angular)
+
+O front-end está localizado na pasta `/frontend`.  
+Para rodar:
+1. Acesse a pasta: `cd frontend`
+2. Instale as dependências: `npm install`
+3. Inicie o projeto: `ng serve`
 
 ## 🐳 Subindo o banco de dados com Docker
 
